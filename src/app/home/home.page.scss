@@ -1,27 +1,18 @@
-#container {
-  text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+h1{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.welcome-text{
+  color:#3cd5f0;  
+  font-family: sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
+.button-home {
+  margin-top: 10px;
+  margin-bottom: 15px;
 }

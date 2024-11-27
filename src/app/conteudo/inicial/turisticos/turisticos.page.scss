@@ -1,0 +1,67 @@
+/* Estilo do cabeçalho */
+.header-container {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Barra de pesquisa */
+  .search-container {
+    padding: 0 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Seção principal onde ficam os cards */
+  .tourist-section {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cards fiquem lado a lado quando há espaço */
+    justify-content: center; /* Centraliza os cards */
+    gap: 16px; /* Espaço entre os cards */
+    padding: 10px;
+    overflow-y: auto; /* Rola caso haja muitos cards */
+  }
+  
+  /* Estilo de cada card */
+  ion-card {
+    flex: 1 1 calc(45% - 20px); /* Ocupa 45% da largura com espaço entre eles */
+    max-width: 300px; /* Limita a largura máxima */
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    transition: transform 0.2s ease;
+  }
+  
+  /* Animação no hover para web */
+  ion-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Imagem dentro do card */
+  ion-card img {
+    width: 100%; /* Ocupa toda a largura do card */
+    height: 160px; /* Mantém uma altura consistente */
+    object-fit: cover; /* Garante que a imagem se encaixe bem */
+  }
+  
+  /* Estilo do cabeçalho do card */
+  ion-card-header {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  
+  /* Estilo global para garantir responsividade */
+  @media (max-width: 600px) {
+    ion-card {
+      flex: 1 1 calc(100% - 20px); /* Cards ocupam 100% da largura em telas pequenas */
+    }
+  
+    ion-card img {
+      height: 120px; /* Ajusta a altura da imagem em telas menores */
+    }
+  }
+  
