@@ -1,3 +1,19 @@
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
+<div style="text-align: center; margin-bottom: 10px;">
+  <input
+    type="text"
+    placeholder="Digite um local..."
+    [(ngModel)]="searchQuery"
+    (keyup.enter)="searchLocation()"
+    style="width: 300px; padding: 5px;"
+  />
+  <button (click)="searchLocation()" style="padding: 5px 10px;">Buscar</button>
+</div>
+
+<google-map
+  height="500px"
+  width="100%"
+  [center]="center"
+  [zoom]="zoom"
+>
+  <map-marker [position]="center"></map-marker>
+</google-map>

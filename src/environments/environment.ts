@@ -13,7 +13,9 @@ export const environment = {
   storageBucket: "zarapp-auth.firebasestorage.app",
   messagingSenderId: "719382090330",
   appId: "1:719382090330:web:ddb5c72843a9f5ded47e63",
-  measurementId: "G-SNLGR6SKPF"
+  measurementId: "G-SNLGR6SKPF",
+  googleMapsApiKey: 'AIzaSyBpVwYGVPoONdvOIQRgh1euoJbyG5gEhWM',
+
 }
 
 };
