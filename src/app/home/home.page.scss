@@ -1,18 +1,53 @@
-
-h1{
+content{
+  font-family: sans-serif;
+}
+.custom-content {
+  position: relative;
+  height: 100%;
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: space-between; /* Distribui os elementos verticalmente */
+  align-items: center; /* Alinha ao centro horizontal */
+  text-align: center;
 }
 
-.welcome-text{
-  color:#3cd5f0;  
-  font-family: sans-serif;
+.grid-container {
+  flex: 1; /* Permite que o grid ocupe o espaço disponível */
+}
+
+.welcome-text {
+  color: #3cd5f0;
   font-weight: 600;
   font-style: normal;
+  margin-top: 10px; /* Pequeno espaçamento superior */
 }
 
-.button-home {
-  margin-top: 10px;
-  margin-bottom: 15px;
+.logo-principal {
+  max-width: 100%; /* Redimensiona a imagem para a largura da tela */
+  max-height: 50vh; /* Ajusta para não ocupar mais de 50% da altura visível */
+  object-fit: contain; /* Evita distorções na imagem */
+  margin: auto;
+  margin-top: 70px; /* Ajuste para descer a imagem */
 }
+
+
+.footer {
+  position: fixed;
+  bottom: 20px; /* Espaçamento inferior */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between; /* Alinha os elementos horizontalmente */
+  align-items: center; /* Centraliza os elementos verticalmente */
+  padding: 0 20px; /* Espaçamento lateral */
+}
+
+.sobre-button {
+  font-size: 16px;
+  color: #00adee; /* Azul claro */
+  --color-focused: #00adee; /* Cor quando o botão está focado */
+  --padding-start: 0; /* Remove padding extra à esquerda */
+  --padding-end: 0; /* Remove padding extra à direita */
+  text-transform: none; /* Mantém o texto normal (não em maiúsculas) */
+}
+

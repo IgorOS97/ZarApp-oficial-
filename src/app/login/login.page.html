@@ -1,10 +1,11 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="success">
-    <ion-title class="ion-text-center">Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
+  <div class="header-container">
+    <h1>Seja Bem-Vindo!</h1>
+    <p>Entre com sua Conta!</p>
+  </div>
+  <div class="img-container">
+    <img src="assets/Icon-removebg-NOVO.png" alt="Ícone do Aplicativo">
+  </div>
   <form (ngSubmit)="loginUsuario()">
     <ion-card color="light" class="ion-text-center">
       <ion-card-header>

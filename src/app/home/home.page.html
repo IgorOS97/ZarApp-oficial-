@@ -1,35 +1,31 @@
 <ion-content class="ion-padding custom-content">
-  <ion-grid class="full-height">
-    <ion-row
-      class="ion-justify-content-center ion-align-items-center full-height"
-    >
+  <ion-grid class="grid-container">
+    <ion-row class="ion-justify-content-center">
       <ion-col size="12" class="ion-text-center">
         <h1 class="welcome-text">Bem-vindo</h1>
+      </ion-col>
+    </ion-row>
 
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center">
         <ion-img
           src="assets/Logo_Principal.png"
           alt="Logo Principal"
           class="logo-principal"
         >
         </ion-img>
-
-        <ion-button
-          expand="block"
-          shape="round"
-          fill="outline"
-          routerLink="/sobre"
-          class="button-home"
-        >
-          Sobre
-        </ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>
 
-  <ion-fab vertical="bottom" horizontal="end" style="margin-bottom: 20px;">
+  <div class="footer">
+    <ion-button fill="clear" (click)="goToSobre()" class="sobre-button">
+      Sobre
+    </ion-button>
     <ion-fab-button (click)="goTologin()">
       <ion-icon name="chevron-forward"></ion-icon>
     </ion-fab-button>
-  </ion-fab>
+  </div>
+  
   
 </ion-content>

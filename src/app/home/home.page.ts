@@ -9,6 +9,9 @@ import { Router } from '@angular/router';
 export class HomePage {
 
   constructor(private router: Router) {}
+  goToSobre(){
+    this.router.navigate(['/sobre']);
+  }
 
   goTologin(){
     this.router.navigate(['/login']);
