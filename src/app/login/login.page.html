@@ -7,15 +7,6 @@
     <img src="assets/Icon-removebg-NOVO.png" alt="Ícone do Aplicativo">
   </div>
   <form (ngSubmit)="loginUsuario()">
-    <ion-card color="light" class="ion-text-center">
-      <ion-card-header>
-        <ion-card-title>FAZER LOGIN</ion-card-title>
-      </ion-card-header>
-      <ion-card-content> Digitar o e-mail e senha. </ion-card-content>
-    </ion-card>
-
-    <br />
-
     <ion-item line="full">
       <ion-label position="floating">E-mail</ion-label>
       <ion-input type="text" name="email" [(ngModel)]="email" required></ion-input>
