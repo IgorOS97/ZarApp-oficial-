@@ -1,0 +1,107 @@
+/* Estilo geral do conteúdo */
+ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f5; /* Fundo suave */
+    padding: 15px;
+  }
+  
+  /* Estilo do título */
+  .idioma_section h3 {
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  /* Container das imagens e textos em coluna */
+  .image_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaço entre cada bandeira e texto */
+  }
+  
+  /* Cada item (imagem + nome) */
+  .idioma_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Imagem circular com hover */
+  .idioma_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    cursor: pointer;
+    margin-bottom: 10px; /* Espaço entre a imagem e o texto */
+  }
+  
+  /* Efeito hover para destaque */
+  .idioma_image:hover {
+    transform: scale(1.1); /* Leve aumento no hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Sombra maior */
+    border: 2px solid #00aaff; /* Borda azul clara */
+  }
+  
+  /* Estilo dos textos abaixo das imagens */
+  .idioma_item p {
+    font-size: 18px;
+    color: #444;
+    margin: 0;
+    font-weight: 500;
+  }
+  /* Aplicando o hover e efeito de clique à imagem e ao texto juntos */
+.idioma_item:hover .idioma_image,
+.idioma_item:active .idioma_image {
+    transform: scale(1.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #00aaff;
+}
+
+/* Estilo do texto quando a imagem está em hover ou é clicada */
+.idioma_item:hover p,
+.idioma_item:active p {
+    color: #00aaff; /* Cor azul clara para combinar com a borda */
+    font-weight: 600; /* Deixa o texto mais destacado */
+    transition: color 0.4s ease;
+}
+
+
+
+.confirme-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px; /* Leve aumento no espaçamento para mais harmonia */
+}
+
+ion-button {
+  --background: #00aaff; /* Cor azul clara */
+  --background-hover: #0088cc; /* Azul mais escuro no hover */
+  --color: white; /* Texto branco */
+  /* Remover esta linha */
+  /* --border-radius: 8px; */ 
+  width: 80%;
+  max-width: 300px;
+  height: 55px;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif; /* Fonte moderna e suave */
+  font-weight: 500; /* Peso equilibrado */
+  letter-spacing: 0.5px; /* Espaçamento sutil entre letras */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+ion-button:hover {
+  transform: scale(1.05); /* Efeito de leve crescimento */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}

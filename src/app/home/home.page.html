@@ -1,20 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding custom-content">
+  <ion-grid class="grid-container">
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center">
+        <h1 class="welcome-text">Bem-vindo</h1>
+      </ion-col>
+    </ion-row>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="12" class="ion-text-center">
+        <ion-img
+          src="assets/Logo_Principal.png"
+          alt="Logo Principal"
+          class="logo-principal"
+        >
+        </ion-img>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="footer">
+    <ion-button fill="clear" (click)="goToSobre()" class="sobre-button">
+      Sobre
+    </ion-button>
+    <ion-fab-button (click)="goTologin()">
+      <ion-icon name="chevron-forward"></ion-icon>
+    </ion-fab-button>
   </div>
+  
+  
 </ion-content>

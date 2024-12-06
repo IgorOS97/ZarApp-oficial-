@@ -1,0 +1,93 @@
+/* Estilo geral do conteúdo */
+ion-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 20px;
+    background-color: #f4f6fc; /* Fundo claro e suave */
+  }
+  
+  /* Estilo do perfil do usuário */
+  .usu_perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; /* Abaixar o bloco de perfil */
+    text-align: center;
+  }
+  
+  /* Imagem do perfil */
+  .usu_perfil ion-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%; /* Imagem circular */
+    background-color: #00b3ff; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease;
+  }
+  
+  .usu_perfil ion-img:hover {
+    transform: scale(1.1); /* Leve crescimento no hover */
+  }
+  
+  /* Nome do usuário */
+  .usu_perfil h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #dbd6d6; /* Cor suave para o texto */
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Container dos botões */
+  .button-container {
+    width: 100%; /* Ocupar toda a largura disponível */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza os botões horizontalmente */
+    gap: 15px; /* Espaço entre os botões */
+    margin-bottom: 50px; /* Espaço inferior */
+    padding: 0 20px; /* Margem interna para não encostar nas laterais */
+  }
+  
+  /* Botão "Editar Perfil" - Cinza claro */
+  .button-perfil {
+    --background: #d3d3d3;
+    --color: #000;
+    border-radius: 8px;
+    width: 100%; /* Ocupar toda a largura do container */
+    max-width: 300px; /* Limitar a largura máxima */
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button-perfil:hover {
+    --background: #b0b0b0; /* Cinza mais escuro no hover */
+    transform: scale(1.05);
+  }
+  
+  /* Botão "Minhas Viagens" - Azul quase roxo */
+  .button-viagem {
+    --background: #5b6ee1;
+    --color: #fff;
+    border-radius: 8px;
+    width: 100%; /* Ocupar toda a largura do container */
+    max-width: 300px; /* Limitar a largura máxima */
+    height: 50px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button-viagem:hover {
+    --background: #4a5ac7; /* Azul mais escuro no hover */
+    transform: scale(1.05);
+  }
+  
