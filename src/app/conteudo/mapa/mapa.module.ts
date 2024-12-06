@@ -1,20 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-
-import { IonicModule } from '@ionic/angular';
-
-import { MapaPageRoutingModule } from './mapa-routing.module';
-
 import { MapaPage } from './mapa.page';
+import { IonicModule } from '@ionic/angular';  // Adicione esta linha
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
-    IonicModule,
-    MapaPageRoutingModule
+    IonicModule,  // Certifique-se de que o IonicModule esteja aqui
   ],
-  declarations: [MapaPage]
+  declarations: [MapaPage],
+  providers: [],
 })
 export class MapaPageModule {}

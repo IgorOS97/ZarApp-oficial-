@@ -13,7 +13,7 @@ import { ConteudoPage } from './conteudo.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    ConteudoPageRoutingModule
+    ConteudoPageRoutingModule,
   ],
   declarations: [ConteudoPage]
 })

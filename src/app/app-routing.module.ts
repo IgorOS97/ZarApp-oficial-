@@ -24,11 +24,16 @@ const routes: Routes = [
   },
   {
     path: 'sobre',
-    loadChildren: () => import('./sobre/sobre.module').then( m => m.SobrePageModule)
+    loadChildren: () => import('./sobre/sobre.module').then(m => m.SobrePageModule),
   },
   {
     path: 'conteudo',
-    loadChildren: () => import('./conteudo/conteudo.module').then( m => m.ConteudoPageModule)
+    loadChildren: () => import('./conteudo/conteudo.module').then(m => m.ConteudoPageModule),
+  },
+  {
+    path: 'inicial',
+    loadChildren: () =>
+      import('./conteudo/inicial/inicial.module').then((m) => m.InicialPageModule),
   },
 ];
 

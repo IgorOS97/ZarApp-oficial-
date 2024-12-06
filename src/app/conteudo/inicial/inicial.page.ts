@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { MapaService } from '../../services/mapa.service';
 
 @Component({
   selector: 'app-inicial',
@@ -7,8 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./inicial.page.scss'],
 })
 export class InicialPage {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private mapaService: MapaService) {}
 
+  // Navegações para páginas específicas
   goToPraias() {
     this.router.navigate(['conteudo/inicial/praias']);
   }
@@ -23,5 +25,10 @@ export class InicialPage {
 
   goToTrilhas() {
     this.router.navigate(['conteudo/inicial/trilhas']);
+  }
+
+  // Usando o MapaService para atualizar a localização no mapa
+  updateMapLocation(lat: number, lng: number) {
+    this.mapaService.updateLocation(lat, lng);  // Chama o serviço para atualizar a localização
   }
 }
